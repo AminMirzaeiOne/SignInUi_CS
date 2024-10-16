@@ -44,6 +44,11 @@ namespace SignInUi
                 textPassword.Visibility = Visibility.Visible;
         }
 
+        private void textPassword_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            passwordBox.Focus();
+        }
+
 
 
 
