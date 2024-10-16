@@ -36,6 +36,14 @@ namespace SignInUi
             Application.Current.Shutdown();
         }
 
+        private void PasswordBox_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            if (!string.IsNullOrEmpty(passwordBox.Password) && passwordBox.Password.Length > 0)
+                textPassword.Visibility = Visibility.Collapsed;
+            else
+                textPassword.Visibility = Visibility.Visible;
+        }
+
 
 
 
