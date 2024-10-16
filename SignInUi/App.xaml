@@ -53,7 +53,7 @@
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type Button}">
-                        <Border Background="{TemplateBinding Background}" CornerRadius="30" BorderBrush="#878787" Padding="15" BorderThickness="1">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="30" BorderBrush="DodgerBlue" Padding="15" BorderThickness="1">
                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
                         </Border>
                     </ControlTemplate>
@@ -98,7 +98,7 @@
             <Setter Property="FontSize" Value="14" />
             <Setter Property="Grid.Column" Value="1" />
             <Setter Property="Margin" Value="10 0 0 0" />
-            <Setter Property="Foreground" Value="#878787" />
+            <Setter Property="Foreground" Value="Black" />
             <Setter Property="BorderBrush" Value="Transparent" />
             <Setter Property="BorderThickness" Value="0" />
         </Style>
@@ -107,7 +107,7 @@
             <Setter Property="FontSize" Value="14" />
             <Setter Property="Margin" Value="0 20 0 0" />
             <Setter Property="Width" Value="200" />
-            <Setter Property="Background" Value="#3AB19B" />
+            <Setter Property="Background" Value="DodgerBlue" />
             <Setter Property="Foreground" Value="#FDFEFE" />
             <Setter Property="FocusVisualStyle" Value="{x:Null}" />
             <Setter Property="Template">

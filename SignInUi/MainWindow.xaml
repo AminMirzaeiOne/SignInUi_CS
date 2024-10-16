@@ -22,17 +22,17 @@
         <Border CornerRadius="10 0 0 10">
             <Border.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                    <GradientStop Color="#3AA9AD" Offset="0" />
-                    <GradientStop Color="#3AADA1" Offset="1" />
+                    <GradientStop Color="DodgerBlue" Offset="0" />
+                    <GradientStop Color="DeepSkyBlue" Offset="1" />
                 </LinearGradientBrush>
             </Border.Background>
 
             <Grid>
                 <Canvas>
-                    <Polygon Points="0,20 230,140 0,270" Fill="#4EB1B6" />
-                    <Polygon Points="100,400 200,370 180,470" Fill="#4EB1B6" />
-                    <Ellipse Margin="250 450 0 0" Width="40" Height="40" Fill="#4EB1B6" />
-                    <Ellipse Margin="50 400 0 0" Width="20" Height="20" Fill="#4EB1B6" />
+                    <Polygon Points="0,20 230,140 0,270" Fill="#44b3fc" />
+                    <Polygon Points="100,400 200,370 180,470" Fill="#44b3fc" />
+                    <Ellipse Margin="250 450 0 0" Width="40" Height="40" Fill="#44b3fc" />
+                    <Ellipse Margin="50 400 0 0" Width="20" Height="20" Fill="#44b3fc" />
                 </Canvas>
 
                 <StackPanel VerticalAlignment="Center">
@@ -43,9 +43,9 @@
             </Grid>
         </Border>
 
-        <Border Background="#FFFFFF" Grid.Column="1" CornerRadius="0 10 10 0" MouseDown="Border_MouseDown">
+        <Border Background="White" Grid.Column="1" CornerRadius="0 10 10 0" MouseDown="Border_MouseDown">
             <StackPanel VerticalAlignment="Center">
-                <TextBlock Text="Sign in to App" Foreground="#3AB19B" Style="{StaticResource TitleText}" />
+                <TextBlock Text="Sign in to App" Foreground="DodgerBlue" Style="{StaticResource TitleText}" />
                 <StackPanel Orientation="Horizontal" Margin="0 20" HorizontalAlignment="Center">
                     <Button Style="{StaticResource buttonCircle}">
                         <Image Source="/Images/google.png" Width="20" Height="20" />
@@ -69,7 +69,7 @@
 
                         <Image Source="/Images/Email.png" Height="20" />
                         <TextBlock x:Name="textEmail" MouseDown="textEmail_MouseDown" Text="Email" Style="{StaticResource textHint}" />
-                        <TextBox Name="txtEmail" TextChanged="txtEmail_TextChanged" Style="{StaticResource textBox}" />
+                        <TextBox x:Name="txtEmail" TextChanged="txtEmail_TextChanged" Style="{StaticResource textBox}" />
                     </Grid>
                 </Border>
 
