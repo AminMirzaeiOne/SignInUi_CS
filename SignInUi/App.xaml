@@ -4,6 +4,12 @@
              xmlns:local="clr-namespace:SignInUi"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style x:Key="TitleText" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="36" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="TextAlignment" Value="Center" />
+            <Setter Property="Foreground" Value="#FFFFFF" />
+        </Style>
+
     </Application.Resources>
 </Application>
