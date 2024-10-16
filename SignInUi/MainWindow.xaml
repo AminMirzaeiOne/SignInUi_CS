@@ -19,6 +19,29 @@
 
         <Image Source="/Images/close.png" Grid.Column="1" Panel.ZIndex="1" MouseUp="Image_MouseUp" Style="{StaticResource imgClose}"/>
 
+        <Border CornerRadius="10 0 0 10">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#3AA9AD" Offset="0" />
+                    <GradientStop Color="#3AADA1" Offset="1" />
+                </LinearGradientBrush>
+            </Border.Background>
+
+            <Grid>
+                <Canvas>
+                    <Polygon Points="0,20 230,140 0,270" Fill="#4EB1B6" />
+                    <Polygon Points="100,400 200,370 180,470" Fill="#4EB1B6" />
+                    <Ellipse Margin="250 450 0 0" Width="40" Height="40" Fill="#4EB1B6" />
+                    <Ellipse Margin="50 400 0 0" Width="20" Height="20" Fill="#4EB1B6" />
+                </Canvas>
+
+                <StackPanel VerticalAlignment="Center">
+                    <TextBlock Text="Sign Up" Style="{StaticResource TitleText}" />
+                    <TextBlock Text="Enter your personal info and create new account to connect us" Opacity="0.8" Margin="20 30 20 30" Style="{StaticResource NormalText}" />
+                    <Button Content="Sign Up" Style="{StaticResource button}" />
+                </StackPanel>
+            </Grid>
+        </Border>
 
     </Grid>
 </Window>
