@@ -65,6 +65,11 @@ namespace SignInUi
                 textEmail.Visibility = Visibility.Visible;
         }
 
+        private void textEmail_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            txtEmail.Focus();
+        }
+
 
 
 
