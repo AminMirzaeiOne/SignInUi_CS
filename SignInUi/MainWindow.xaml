@@ -12,6 +12,9 @@
         Height="500" 
         Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="1.5*" />
+        </Grid.ColumnDefinitions>
     </Grid>
 </Window>
