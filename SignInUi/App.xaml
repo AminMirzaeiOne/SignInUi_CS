@@ -103,6 +103,34 @@
             <Setter Property="BorderThickness" Value="0" />
         </Style>
 
+        <Style x:Key="mainButton" TargetType="{x:Type Button}">
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="Margin" Value="0 20 0 0" />
+            <Setter Property="Width" Value="200" />
+            <Setter Property="Background" Value="#3AB19B" />
+            <Setter Property="Foreground" Value="#FDFEFE" />
+            <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="25" BorderBrush="#49B7A3" Padding="15" BorderThickness="1">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#339685" />
+                    <Setter Property="Foreground" Value="White" />
+                </Trigger>
+                <Trigger Property="IsMouseCaptured" Value="True">
+                    <Setter Property="Background" Value="#2d7a6c" />
+                    <Setter Property="Foreground" Value="White" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
 
     </Application.Resources>
 </Application>
