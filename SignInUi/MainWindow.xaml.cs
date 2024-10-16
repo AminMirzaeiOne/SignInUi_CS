@@ -49,6 +49,14 @@ namespace SignInUi
             passwordBox.Focus();
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtEmail.Text) && !string.IsNullOrEmpty(passwordBox.Password))
+            {
+                MessageBox.Show("Successfully Signed In");
+            }
+        }
+
 
 
 
