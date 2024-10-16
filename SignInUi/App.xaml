@@ -86,5 +86,13 @@
             </Style.Triggers>
         </Style>
 
+        <Style x:Key="textHint" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="Grid.Column" Value="1" />
+            <Setter Property="Panel.ZIndex" Value="1" />
+            <Setter Property="Margin" Value="10 0 0 0" />
+            <Setter Property="Foreground" Value="#ACB0AF" />
+        </Style>
+
     </Application.Resources>
 </Application>
