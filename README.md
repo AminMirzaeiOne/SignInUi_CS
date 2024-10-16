@@ -1,7 +1,7 @@
 # SignInUi
 
 <h2> 👨‍💻 About Project</h2>
-Custom data grid user interface design in WPF In the form of a management dashboard<br />
+Modern login window user interface design in WPF<br />
 
 <h2> ⭐ Features</h2>
 -Modern User Interface<br />
